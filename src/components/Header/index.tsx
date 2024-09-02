@@ -1,6 +1,8 @@
 import { GithubLogo, InstagramLogo, LinkedinLogo, List, MoonStars, Sun, TextOutdent, WhatsappLogo } from "phosphor-react";
 import { Container, Icons, Menu, MenuClicked, Switch } from "./styles";
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import styled from "styled-components";
 
 interface Props {
     toggleTheme: () => void;
@@ -15,12 +17,30 @@ interface Props {
     }
 }
 
+interface StyledLinkProps {
+    isActive?: boolean;
+  }
+  
+  export const StyledLink = styled(Link)<StyledLinkProps>`
+    color: ${props => props.isActive ? props.theme.colors.secondary : props.theme.colors.text};
+    outline: none;
+    text-decoration: none;
+    border: none;
+    transition: color 0.2s;
+  
+    &:hover {
+      color: ${props => props.theme.colors.secondary};
+    }
+  `
+
 export function Header({ toggleTheme, themeMode }:Props) {
 
     const [menuClicked, setMenuClicked] = useState(() => {
         const savedMenu = localStorage.getItem('menu')
         return savedMenu ? JSON.parse(savedMenu) : false
     })
+
+    const location = useLocation()
 
     function toggleMenu() {
         setMenuClicked((prevState: any) => {
@@ -56,10 +76,18 @@ export function Header({ toggleTheme, themeMode }:Props) {
                             <Sun size={40} />
                         )}
                     </Switch>
-                    <a href={window.location.origin + '/project'}>Project</a>
-                    <a href={window.location.origin + '/hability'}>Hability</a>
-                    <a href={window.location.origin + '/resume'}>Resume</a>
-                    <a href={window.location.origin}>Home</a>
+                    <StyledLink to="/project" isActive={location.pathname === '/project'}>
+                        Project
+                    </StyledLink>
+                    <StyledLink to="/hability" isActive={location.pathname === '/hability'}>
+                        Hability
+                    </StyledLink>
+                    <StyledLink to="/resume" isActive={location.pathname === '/resume'}>
+                        Resume
+                    </StyledLink>
+                    <StyledLink to="/" isActive={location.pathname === '/'}>
+                        Home
+                    </StyledLink>
                 </MenuClicked>
                 
             )}

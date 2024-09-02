@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -23,7 +24,8 @@ export const Switch = styled.button`
     background-color: ${props => props.theme.colors.primary};
     color: ${props => props.theme.colors.text};
     display: flex;
-    
+    transition: background-color 0.3s;
+
     &:hover {
         background-color: ${props => props.theme.colors.secondary};
     }
@@ -46,6 +48,7 @@ export const Icons = styled.div`
         border-radius: 9999px;
         width: 3.5rem;
         height: 3.5rem;
+        transition: background-color 0.3s;
 
         &:hover {
             background-color: ${props => props.theme.colors.secondary};
@@ -58,6 +61,7 @@ export const Menu = styled.button`
     color: ${props => props.theme.colors.text};
     margin-right: 40px;
     cursor: pointer;
+
     &:hover {
         color: ${props => props.theme.colors.secondary}
     }
@@ -70,14 +74,5 @@ export const MenuClicked = styled.div`
     font-size: 3rem;
     margin-left: 48%;
 
-    a {
-        color: ${props => props.theme.colors.text};
-        outline: none;
-        text-decoration: none;
-        border: none;
-
-        &:hover {
-            color: ${props => props.theme.colors.secondary};
-        }
-    }
 `
+
