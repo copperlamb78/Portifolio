@@ -1,5 +1,5 @@
 import { GithubLogo, InstagramLogo, LinkedinLogo, List, MoonStars, Sun, TextOutdent, WhatsappLogo } from "phosphor-react";
-import { Container, Icons, Menu, MenuClicked, Switch } from "./styles";
+import { Container, Icons, Menu, MenuClicked, MenuIcon, Switch } from "./styles";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
@@ -68,7 +68,7 @@ export function Header({ toggleTheme, themeMode }:Props) {
             </Icons>
             
             {menuClicked && (
-                <MenuClicked>
+                <MenuClicked menuClicked={menuClicked}>
                     <Switch onClick={toggleTheme}>
                         {themeMode.title === 'DarkMode' ? (
                             <MoonStars size={40} />
@@ -92,12 +92,10 @@ export function Header({ toggleTheme, themeMode }:Props) {
                 
             )}
             <Menu onClick={toggleMenu}>
-                {menuClicked ? (
-                    <TextOutdent size={60}/>
-                    
-                ) : (
-                    <List size={60}/>
-                )}
+                <MenuIcon menuClicked={menuClicked}>
+                    {menuClicked ? <TextOutdent size={60}/> : <List size={60}/>}
+                </MenuIcon>
+                
             </Menu>
             
         </Container>

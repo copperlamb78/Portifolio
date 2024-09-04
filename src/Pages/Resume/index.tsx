@@ -1,5 +1,5 @@
 import { Container, Image, ImgContainer, Text, TextContainer } from "./styles";
-import img2 from '../../assets/img2.jpg'
+import img2 from '../../assets/ResumeImg.jpg'
 
 export function Resume() {
     return(

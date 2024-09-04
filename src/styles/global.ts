@@ -10,7 +10,8 @@ export default createGlobalStyle`
     body {
         background-color: ${props => props.theme.colors.background};
         font-size: 1rem;
-        color: #ffffff;
+        color: ${props => props.theme.colors.bw};
         font-family: "Bebas Neue", sans-serif;
+        transition: background-color 0.3s;
     }
 `

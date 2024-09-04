@@ -1,4 +1,4 @@
-import img1 from '../../assets/Img1.png'
+import img1 from '../../assets/HomeImg.png'
 import { Container, Image, InicialText } from './styles'
 
 

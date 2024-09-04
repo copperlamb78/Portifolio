@@ -14,6 +14,7 @@ export const TextContainer = styled.div`
     justify-content: center;
     align-items: center;
     color: ${props => props.theme.colors.bw};
+    transition: color 0.3s;
 `
 export const Image = styled.img`
     width: 700px;

@@ -16,4 +16,5 @@ export const InicialText = styled.h1`
     width: 400px;
     font-size: 5rem;
     margin-left: 100%;
+    transition: color 0.3s;
 `
