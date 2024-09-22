@@ -2,7 +2,8 @@
 import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
-    height: 150px;
+    width: 100vw;
+    height: 10vw;
     background-color: ${props => props.theme.colors.primary};
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
@@ -20,8 +21,8 @@ export const Switch = styled.button`
     cursor: pointer;
     border-radius: 9999px;
     border: 0;
-    width: 3rem;
-    height: 3rem;
+    width: 3vw;
+    height: 3vw;
     background-color: ${props => props.theme.colors.primary};
     color: ${props => props.theme.colors.text};
     display: flex;
@@ -33,7 +34,7 @@ export const Switch = styled.button`
 `
 
 export const Icons = styled.div`
-    margin-left: 10px;
+    margin-left: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,8 +48,8 @@ export const Icons = styled.div`
         text-decoration: none;
         border: none;
         border-radius: 9999px;
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 3vw;
+        height: 3vw;
         transition: background-color 0.3s, color 0.3s;
 
         &:hover {
@@ -60,7 +61,7 @@ export const Menu = styled.button`
     background: transparent;
     border: 0;
     color: ${props => props.theme.colors.text};
-    margin-right: 40px;
+    margin-right: 3vw;
     cursor: pointer;
     transition: color 0.3s;
 
@@ -81,9 +82,9 @@ export const MenuClicked = styled.div<{menuClicked: boolean}>`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.75rem;
-    font-size: 3rem;
-    margin-left: 48%;
+    gap: 1.5vw;
+    font-size: 2.5vw;
+    margin-left: 45%;
     animation: ${prosp => prosp.menuClicked ? fadeIn : false} 0.5s ease-in
 
 `

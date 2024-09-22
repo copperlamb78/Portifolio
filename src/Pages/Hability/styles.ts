@@ -5,9 +5,9 @@ export const Container = styled.div`
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2.5%;
-    width: 1020px;
-    height: 510px;
+    padding: 2.5%;
+    width: 60vw;
+    height: 30vw;
 `
 
 export const ConjuntIcons = styled.div`
@@ -16,8 +16,8 @@ export const ConjuntIcons = styled.div`
 
 export const IconsContainer = styled.div`
     background-color: ${props => props.theme.colors.primary};
-    border-radius: 32px;
-    margin-top: 123px;
-    width: 228px;
-    height: 88px;
+    border-radius: 1.5vw;
+    margin-top: 10vw;
+    width: 13vw;
+    height: 5vw;
 `
