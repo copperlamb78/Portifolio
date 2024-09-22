@@ -10,7 +10,11 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background-color 0.3s
+    transition: background-color 0.3s;
+
+    @media(max-width: 640px) {
+      height: 20vw;
+    }
 
 `
 
@@ -21,8 +25,8 @@ export const Switch = styled.button`
     cursor: pointer;
     border-radius: 9999px;
     border: 0;
-    width: 3vw;
-    height: 3vw;
+    width: 5vw;
+    height: 5vw;
     background-color: ${props => props.theme.colors.primary};
     color: ${props => props.theme.colors.text};
     display: flex;
@@ -48,8 +52,8 @@ export const Icons = styled.div`
         text-decoration: none;
         border: none;
         border-radius: 9999px;
-        width: 3vw;
-        height: 3vw;
+        width: 5vw;
+        height: 5vw;
         transition: background-color 0.3s, color 0.3s;
 
         &:hover {
@@ -83,8 +87,8 @@ export const MenuClicked = styled.div<{menuClicked: boolean}>`
     justify-content: center;
     align-items: center;
     gap: 1.5vw;
-    font-size: 2.5vw;
-    margin-left: 45%;
+    font-size: 4vw;
+    margin-left: 20%;
     animation: ${prosp => prosp.menuClicked ? fadeIn : false} 0.5s ease-in
 
 `

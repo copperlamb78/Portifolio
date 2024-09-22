@@ -8,10 +8,20 @@ export const Container = styled.div`
     padding: 2.5%;
     width: 60vw;
     height: 30vw;
+
+    @media(max-width: 640px) {
+        width: 80vw;
+        height: 80vh;
+    }
 `
 
 export const ConjuntIcons = styled.div`
     
+    @media(max-width: 640px) {
+        display: flex;
+        flex-direction: column;
+        gap: 18vh;
+    }
 `
 
 export const IconsContainer = styled.div`
@@ -20,4 +30,9 @@ export const IconsContainer = styled.div`
     margin-top: 10vw;
     width: 13vw;
     height: 5vw;
+
+    @media(max-width: 640px) {
+        width: 20vw;
+        height: 4vh;
+    }
 `

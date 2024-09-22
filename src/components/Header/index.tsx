@@ -54,16 +54,16 @@ export function Header({ toggleTheme, themeMode }:Props) {
         <Container>
             <Icons>
                 <a href="https://github.com/copperlamb78" target="blank">
-                    <GithubLogo size={'2.7vw'}/>
+                    <GithubLogo size={'4vw'}/>
                 </a>
                 <a href="https://www.instagram.com/antoniobil.2014/" target="blank">
-                    <InstagramLogo size={'2.7vw'}/>
+                    <InstagramLogo size={'4vw'}/>
                 </a>
                 <a href="https://www.linkedin.com/in/antonio-gabriel-gomes-falc%C3%A3o-do-nascimento-a53a95306/" target="blank">
-                    <LinkedinLogo size={'2.7vw'}/>
+                    <LinkedinLogo size={'4vw'}/>
                 </a>
                 <a href="https://wa.me/5575992197406?text=Ola%20Dev!" target="blank">
-                    <WhatsappLogo size={'2.7vw'}/>
+                    <WhatsappLogo size={'4vw'}/>
                 </a>
             </Icons>
             
@@ -71,9 +71,9 @@ export function Header({ toggleTheme, themeMode }:Props) {
                 <MenuClicked menuClicked={menuClicked}>
                     <Switch onClick={toggleTheme}>
                         {themeMode.title === 'DarkMode' ? (
-                            <MoonStars size={'2.2vw'} />
+                            <MoonStars size={'4vw'} />
                         ) : (
-                            <Sun size={'2.2vw'} />
+                            <Sun size={'4vw'} />
                         )}
                     </Switch>
                     <StyledLink to="/project" isActive={location.pathname === '/project'}>
@@ -93,7 +93,7 @@ export function Header({ toggleTheme, themeMode }:Props) {
             )}
             <Menu onClick={toggleMenu}>
                 <MenuIcon menuClicked={menuClicked}>
-                    {menuClicked ? <TextOutdent size={'3.8vw'}/> : <List size={'3.8vw'}/>}
+                    {menuClicked ? <TextOutdent size={'5vw'}/> : <List size={'5vw'}/>}
                 </MenuIcon>
                 
             </Menu>
