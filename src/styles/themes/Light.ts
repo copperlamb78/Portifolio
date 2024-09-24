@@ -5,7 +5,8 @@ export const LightMode = {
       background: '#CECECE',
       text: '#FFFFFF',
       secondary: '#164845',
-      bw: '#000000'
+      bw: '#000000',
+      black: '#000000'
     },
   };
   

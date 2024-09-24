@@ -30,6 +30,21 @@ export const IconsContainer = styled.div`
     margin-top: 10vw;
     width: 13vw;
     height: 5vw;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+    justify-content: left;
+    color: ${props => props.theme.colors.black};
+    padding: 1vw;
+
+    p {
+        font-size: 2vw;
+    }
+
+    img {
+        width: 3vw;
+    }
 
     @media(max-width: 640px) {
         width: 20vw;
