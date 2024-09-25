@@ -21,10 +21,9 @@ export const Image = styled.img`
     border-radius: 1vw;
 `
 export const LinkDiv = styled.div`
-    
-    /* background-color: ${props => props.theme.colors.primary}; */
-
-
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
 `
 export const StyledLink = styled.a`
     display: flex;

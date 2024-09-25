@@ -15,6 +15,12 @@ export function Project() {
                     >
                         Projeto completo
                     </StyledLink>
+                    <StyledLink 
+                        href="http://eletronic-recycling.netlify.app/"
+                        target="_blank"
+                    >
+                        Link do site
+                    </StyledLink>
                 </LinkDiv>
             </ProjectContainer>
         </ProjectMainContainer>
