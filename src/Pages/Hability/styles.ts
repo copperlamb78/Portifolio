@@ -43,11 +43,16 @@ export const IconsContainer = styled.div`
     }
 
     img {
-        width: 3vw;
+        width: 4vw;
     }
 
     @media(max-width: 640px) {
-        width: 20vw;
-        height: 4vh;
+        width: 22vw;
+        height: 6vh;
+        
+        p {
+            font-size: 4vw;
+        }
+
     }
 `

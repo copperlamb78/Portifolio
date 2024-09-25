@@ -8,21 +8,21 @@ export function Hability() {
         <Container>
             <ConjuntIcons>
                 <IconsContainer>
-                    <FileJs size={'3vw'}/>
+                    <FileJs size={'4vw'}/>
                     <p>JavaScript</p>
                 </IconsContainer>
                 <IconsContainer>
-                    <FileHtml size={'3vw'}/>
+                    <FileHtml size={'4vw'}/>
                     <p>HTML5</p>
                 </IconsContainer>
                 <IconsContainer>
-                    <FileCss size={'3vw'}/>
+                    <FileCss size={'4vw'}/>
                     <p>CSS</p>
                 </IconsContainer>
             </ConjuntIcons>
             <ConjuntIcons>
                 <IconsContainer>
-                    <Atom size={'3vw'}/>
+                    <Atom size={'4vw'}/>
                     <p>React</p>
                 </IconsContainer>
             </ConjuntIcons>
@@ -36,7 +36,7 @@ export function Hability() {
                     <p>NodeJS</p>
                 </IconsContainer>
                 <IconsContainer>
-                    <FileTs size={'3vw'}/>
+                    <FileTs size={'4vw'}/>
                     <p>Typescript</p>
                 </IconsContainer>
             </ConjuntIcons>
