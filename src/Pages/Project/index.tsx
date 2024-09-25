@@ -13,13 +13,13 @@ export function Project() {
                         href="https://github.com/copperlamb78/Eletronic_Recycling"
                         target="_blank"
                     >
-                        Projeto completo
+                        complete project
                     </StyledLink>
                     <StyledLink 
                         href="http://eletronic-recycling.netlify.app/"
                         target="_blank"
                     >
-                        Link do site
+                        Site Link
                     </StyledLink>
                 </LinkDiv>
             </ProjectContainer>

@@ -2,7 +2,7 @@
 import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
-    width: 100vw;
+    max-width: 100vw;
     height: 10vw;
     background-color: ${props => props.theme.colors.primary};
     border-bottom-left-radius: 16px;
